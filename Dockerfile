@@ -18,7 +18,7 @@ COPY src/ ./src/
 RUN dotnet publish -c Release -o /out
 
 # Runtime stage
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 WORKDIR /app
 
 # Install PowerShell and Python 3
